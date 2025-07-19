@@ -23,3 +23,4 @@ steps:
   inputs:
     command: 'install'
     workingDir: '$(System.DefaultWorkingDirectory)'
+  displayName: 'npm install - command'
