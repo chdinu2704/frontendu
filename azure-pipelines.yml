@@ -18,3 +18,8 @@ steps:
 - script: |
     npm install -g @angular/cli
   displayName: 'Install angular cli'
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '$(System.DefaultWorkingDirectory)'
