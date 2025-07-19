@@ -24,3 +24,10 @@ steps:
     command: 'install'
     workingDir: '$(System.DefaultWorkingDirectory)'
   displayName: 'npm install - command'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(System.DefaultWorkingDirectory)'
+    customCommand: 'build'
+  displayName: 'ng build'  
