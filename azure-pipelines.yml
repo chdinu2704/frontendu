@@ -25,9 +25,6 @@ steps:
     workingDir: '$(System.DefaultWorkingDirectory)'
   displayName: 'npm install - command'
 
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    workingDir: '$(System.DefaultWorkingDirectory)'
-    customCommand: 'ng build'
+- script: |
+    ng build
   displayName: 'ng build'  
