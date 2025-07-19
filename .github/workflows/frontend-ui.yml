@@ -57,4 +57,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}    
           
       - name: docker build
-        run: docker build -t new:1.0 .
+        run: docker build -t jaiarch/manaz:3.0 .
+
+      - name: docker push
+        run: docker push jaiarch/manaz:3.0
