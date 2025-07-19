@@ -29,4 +29,10 @@ jobs:
 
       - name: Run ng build
         run: ng build
-      
+        
+  docker_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: docker build
+        run: docker build -t new:1.0 .
